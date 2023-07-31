@@ -1,0 +1,76 @@
+/* Archivo styles.css */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .card {
+    background-color: #000; /* Cambiar el color de fondo a negro */
+    color: #fff; /* Cambiar el color de las letras a blanco */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    width: 390px;
+    height: 90px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .user-link-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  #userLink {
+    flex-grow: 1;
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  #getUserButton {
+    background-color: #bd081c;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .userInfoContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .userInfoContainer img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  #pinterestLogoIcon {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .user-info-visible #pinterestLogoIcon {
+    opacity: 1;
+  }
+  
+  .collapsed {
+    display: none;
+  }
+  
+  .user-info-visible #getUserButton {
+    display: none;
+  }
+  
+  /* Estilos para quitar subrayado del enlace del usuario */
+  a.user-info {
+    text-decoration: none;
+    color: #fff; /* Cambiar el color del texto del enlace a blanco */
+  }
+  
